@@ -58,7 +58,7 @@
 <body>
     <div id="home">
         <!-- header -->
-        <header>
+        <header id="top">
             <div class="container">
                 <div class="header d-lg-flex justify-content-between align-items-center">
                     <div class="header-wthree">
@@ -936,6 +936,13 @@
         </div>
     </div>
     <!-- //popup -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $("#top").addClass("scrollNav");
+            });
+        });
+        </script>
 </body>
 
 </html>

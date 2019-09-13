@@ -244,3 +244,11 @@ li.dropdown.nav-item:hover {
         font-size: 0.7em;
     }
 }
+
+.scrollNav{
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
