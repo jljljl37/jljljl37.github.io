@@ -1,1 +1,3 @@
 *.ls
+/tests
+/index/fonts
