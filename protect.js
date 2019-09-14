@@ -32,7 +32,7 @@
             devtools.open = false;
             devtools.orientation = null;
         }
-    }, 100)
+    }, 250)
     if (typeof module !== 'undefined' && module.exports) {
         module.exports = devtools;
     } else {
