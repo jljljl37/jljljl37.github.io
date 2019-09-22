@@ -962,8 +962,11 @@
         //         $("#top").addClass("scrollNav");
         //     });
         // });
+        $(function(){
+            $("#top").addClass("scrollNav");
+        }());
         $(window).resize(function() {
-            if ($(window).width() < 800) {
+            if ($(window).width() < 1000) {
                 $("#top").removeClass("scrollNav");
             } else {
                 $("#top").addClass("scrollNav");
