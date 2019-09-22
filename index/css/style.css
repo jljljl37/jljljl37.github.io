@@ -218,13 +218,13 @@ label {
 }
 
 .slide-banner {
-    background: url(../images/t2.jpg) no-repeat center;
+    background: url(../images/s1.jpg) no-repeat center;
     background-size: cover;
     min-height: 485px;
 }
 
 .ab-banner {
-    background: url(../images/t5.jpg) no-repeat center;
+    background: url(../images/s2.jpg) no-repeat center;
     background-size: cover;
     min-height: 485px;
 }
