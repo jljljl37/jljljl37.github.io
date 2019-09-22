@@ -23,9 +23,9 @@
     <!-- font-awesome icons -->
     <link href="index/css/font-awesome.min.css" rel="stylesheet">
     <!-- online-fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <!-- DIY -->
     <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
@@ -37,6 +37,9 @@
                 $(this).attr("alt","No image.You can upload yours!");
                 $(this).attr("title","No image.You can upload yours!");
             });
+        });
+        $(function(){
+            $("a[href]").not("[href^='#']").attr("target","_blank");
         });
     </script>
     <script>
@@ -62,7 +65,7 @@
                 <div class="header d-lg-flex justify-content-between align-items-center">
                     <div class="header-wthree">
                         <h1>
-                            <a class="navbar-brand editContent logo" href="index.html">
+                            <a class="navbar-brand editContent logo" href="#">
                                 <span class="fa fa-ioxhost" aria-hidden="true"></span>XJDriver
                             </a>
                         </h1>
@@ -72,7 +75,7 @@
                             <input class="menu-btn" type="checkbox" id="menu-btn" />
                             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                             <ul class="menu">
-                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                                 <li class="dropdown nav-item">
                                     <a href="#" class="dropbtn nav-link">Products</a>
                                     <div class="dropdown-content  show">
@@ -85,18 +88,17 @@
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#services">Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#friends">Friends</a></li>
                                 <li class="dropdown nav-item">
                                     <a href="#" class="dropbtn nav-link">Dropdown</a>
                                     <div class="dropdown-content  show">
-                                        <a href="#plans" class="nav-link">Pricing</a>
-                                        <a href="#portfolio" class="nav-link">Portfolio</a>
                                         <a href="#stats" class="nav-link">stats</a>
+                                        <a href="#plans" class="nav-link">Pricing</a>
                                         <a href="#testi" class="nav-link">Testimonials</a>
+                                        <a href="#contact" class="nav-link">Contact</a>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
                             </ul>
                         </nav>
                     </div>
@@ -372,7 +374,7 @@
                                 <li>Live Support</li>
                             </ul>
                         </div>
-                        <a href="index.html" class="btn w3ls-btn bg-theme1">
+                        <a href="#" class="btn w3ls-btn bg-theme1">
                             view more
                         </a>
                     </div>
@@ -391,7 +393,7 @@
                                 <li>Live Support</li>
                             </ul>
                         </div>
-                        <a href="index.html" class="btn w3ls-btn bg-theme1">
+                        <a href="#" class="btn w3ls-btn bg-theme1">
                             view more
                         </a>
                     </div>
@@ -411,7 +413,7 @@
                                 <li>Live Support</li>
                             </ul>
                         </div>
-                        <a href="index.html" class="btn w3ls-btn bg-theme1">
+                        <a href="#" class="btn w3ls-btn bg-theme1">
                             view more
                         </a>
                     </div>
@@ -432,8 +434,8 @@
                     <div class="box13">
                         <img src="./index/images/t1.jpg" class="img-fluid img-thumbnail" alt="" />
                         <div class="box-content">
-                            <h3 class="title">whom?</h3>
-                            <span class="post">role in detail</span>
+                            <h3 class="title">JL</h3>
+                            <span class="post">The author</span>
                             <ul class="social">
                                 <li><a href="#"><span class="fa fa-facebook"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -445,8 +447,8 @@
                     <div class="box13">
                         <img src="./index/images/t2.jpg" class="img-fluid img-thumbnail" alt="" />
                         <div class="box-content">
-                            <h3 class="title">whom?</h3>
-                            <span class="post">role in detail</span>
+                            <h3 class="title"><a href="https://www.luogu.org/space/show?uid=41939">Fangzhou</a></h3>
+                            <span class="post">website</span>
                             <ul class="social">
                                 <li><a href="#"><span class="fa fa-facebook"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -510,37 +512,37 @@
         </div>
     </section>
     <!-- //team -->
-    <!-- portfolio -->
-    <section class="pt-lg-5" id="portfolio">
+    <!-- friends -->
+    <section class="pt-lg-5" id="friends">
         <div class="container-fluid">
             <div class="title-desc text-center pb-3 pb-lg-5">
-                <h3 class="main-title-w3pvt">portfolio</h3>
+                <h3 class="main-title-w3pvt">friends</h3>
                 <p>Inspired By Cars. Driven By Teachers.</p>
             </div>
             <div class="row pb-sm-5 pb-3 text-center mt-lg-5">
                 <div class="col-lg-4 col-sm-6 port-grid">
-                    <a href="#gal1"><img src="./index/images/g2.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal1"><img src="./index/images/g1.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid">
-                    <a href="#gal2"><img src="./index/images/g3.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal2"><img src="./index/images/g2.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid">
-                    <a href="#gal3"><img src="./index/images/g4.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal3"><img src="./index/images/g3.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
-                    <a href="#gal4"><img src="./index/images/g5.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal4"><img src="./index/images/g4.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
-                    <a href="#gal5"><img src="./index/images/g6.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal5"><img src="./index/images/g5.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
-                    <a href="#gal6"><img src="./index/images/g1.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal6"><img src="./index/images/g6.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
-                    <a href="#gal7"><img src="./index/images/g4.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal7"><img src="./index/images/g7.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
-                    <a href="#gal8"><img src="./index/images/g2.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                    <a href="#gal8"><img src="./index/images/g8.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
                     <a href="#gal9"><img src="./index/images/g3.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
@@ -549,7 +551,7 @@
 
         </div>
     </section>
-    <!-- //portfolio -->
+    <!-- //friends -->
     <!-- testimonials -->
     <div class="testimonials py-lg-5 py-4" id="testi">
         <div class="container">
@@ -675,7 +677,7 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="card border-0 med-blog">
                                     <div class="card-header p-0">
-                                        <img class="card-img-bottom" src="./index/images/g1.jpg" alt="Card image cap">
+                                        <img class="card-img-bottom" src="./index/images/p1.jpg" alt="Card image cap">
                                     </div>
                                     <div class="card-body border border-top-0">
                                         <h5 class="blog-title card-title m-0">Someone
@@ -691,7 +693,7 @@
                             <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
                                 <div class="card border-0 med-blog">
                                     <div class="card-header p-0">
-                                        <img class="card-img-bottom" src="./index/images/g3.jpg" alt="Card image cap">
+                                        <img class="card-img-bottom" src="./index/images/p2.jpg" alt="Card image cap">
                                     </div>
                                     <div class="card-body border border-top-0">
                                         <h5 class="blog-title card-title m-0">Someone
@@ -707,7 +709,7 @@
                             <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
                                 <div class="card border-0 med-blog">
                                     <div class="card-header p-0">
-                                        <img class="card-img-bottom" src="./index/images/g6.jpg" alt="Card image cap">
+                                        <img class="card-img-bottom" src="./index/images/p3.jpg" alt="Card image cap">
                                     </div>
                                     <div class="card-body border border-top-0">
                                         <h5 class="blog-title card-title m-0">Someone
@@ -732,7 +734,7 @@
             <h4 class="abt-text text-capitalize text-sm-center mb-0">we are XJ Drivers</h4>
             <p class="color-white text-sm-center ">Though We've Never Taken Driving Lessons</p>
             <div class="d-sm-flex justify-content-center">
-                <a href="#portfolio" class="btn  mt-sm-4 mt-3 ml-3 w3_pvt-link-bnr">
+                <a href="#friends" class="btn  mt-sm-4 mt-3 ml-3 w3_pvt-link-bnr">
                     view more</a>
                 <a href="#contact" class="btn  mt-sm-4 mt-3 ml-3 w3_pvt-link-bnr scroll">
                     contact us</a>
@@ -819,7 +821,7 @@
             <a href="#home" class="move-top text-center"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
             <div class="footer-logo">
                 <h2>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         <span class="fa fa-ioxhost  color-theme mr-2" aria-hidden="true"></span>XJDriver
                     </a>
                 </h2>
@@ -855,10 +857,16 @@
     </div>
     <!-- //footer -->
     <!-- popup-->
-    <div id="gal1" class="pop-overlay animate">
+    <div id="gal1" class="pop-overlay animate" onselectstart="return false" oncopy="return false">
         <div class="popup">
             <img src="./index/images/g1.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">No text.Why not upload one?</p>
+            <span class="mt-4" style="display:block;text-align: center">
+                <span style="font-weight: 800;font-size: 40px">S<span style="color: red;">iyuan</span></span>
+                <h4>~~啊！人需要壮丁~~</h4><br>
+                <a style="display:block;text-align:center;height: 10px;" href="https://www.luogu.org/space/show?uid=49725">luogu</a><br>
+                <a style="display:block;text-align:center;height: 10px;" href="https://orzsiyuan.com/">orzsiyuan</a><br>
+                <a style="display:block;text-align:center;height: 10px;" href="https://lmoliver.github.io/mosiyuan/index.html">mosiyuan</a>  ——by LMOliver
+            </sapn>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
     </div>
@@ -867,7 +875,10 @@
     <div id="gal2" class="pop-overlay animate">
         <div class="popup">
             <img src="./index/images/g2.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">No text.Why not upload one?</p>
+            <p class="mt-4">
+                <h5 class="cont-form">LJL</h5>
+                <h4 style="text-align: center">该人物尚未评价</h4>
+            </p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
     </div>
