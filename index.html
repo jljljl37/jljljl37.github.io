@@ -29,6 +29,8 @@
     <!-- DIY -->
     <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
+    <script type="text/javascript" src="./protect.js"></script>
+    <script type="text/javascript" src="./a.js"></script>
     <!-- Defalt Images -->
     <script type="text/javascript">
         $(document).ready(function(){
@@ -37,9 +39,6 @@
                 $(this).attr("alt","No image.You can upload yours!");
                 $(this).attr("title","No image.You can upload yours!");
             });
-        });
-        $(function(){
-            $("a[href]").not("[href^='#']").attr("target","_blank");
         });
     </script>
     <script>
@@ -513,6 +512,14 @@
     </section>
     <!-- //team -->
     <!-- friends -->
+    <style type="text/css">
+        .lsbig{
+            transition: all 0.5s;
+        }  
+        .lsbig:hover{  
+            transform: scale(1.3);
+        }  
+    </style>
     <section class="pt-lg-5" id="friends">
         <div class="container-fluid">
             <div class="title-desc text-center pb-3 pb-lg-5">
@@ -520,32 +527,32 @@
                 <p>Inspired By Cars. Driven By Teachers.</p>
             </div>
             <div class="row pb-sm-5 pb-3 text-center mt-lg-5">
-                <div class="col-lg-4 col-sm-6 port-grid">
+                <div class="col-lg-4 col-sm-6 port-grid lsbig">
                     <a href="#gal1"><img src="./index/images/g1.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="col-lg-4 col-sm-6 port-grid">
+                <div class="col-lg-4 col-sm-6 port-grid lsbig">
                     <a href="#gal2"><img src="./index/images/g2.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="col-lg-4 col-sm-6 port-grid">
+                <div class="col-lg-4 col-sm-6 port-grid lsbig">
                     <a href="#gal3"><img src="./index/images/g3.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
+                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4 lsbig">
                     <a href="#gal4"><img src="./index/images/g4.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
                 <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
                     <a href="#gal5"><img src="./index/images/g5.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
+                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4 lsbig">
                     <a href="#gal6"><img src="./index/images/g6.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
+                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4 lsbig">
                     <a href="#gal7"><img src="./index/images/g7.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
+                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4 lsbig">
                     <a href="#gal8"><img src="./index/images/g8.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4">
-                    <a href="#gal9"><img src="./index/images/g3.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
+                <div class="col-lg-4 col-sm-6 port-grid mt-lg-4 lsbig">
+                    <a href="#gal9"><img src="./index/images/g9.jpg" alt="corp-image" class="img-fluid img-thumbnail"></a>
                 </div>
             </div>
 
@@ -756,9 +763,9 @@
                         <div class="contact-w3">
                             <span class="fa fa-envelope-open  mb-3"></span>
                             <div class="d-flex flex-column">
-                                <a href="mailto:example@email.com" class="d-block">whose email is this?</a>
-                                <a href="mailto:example@email.com" class="my-2 d-block">whose email is this?</a>
-                                <a href="mailto:example@email.com">whose email is this?</a>
+                                <a href="mailto:example@email.com" class="d-block">null</a>
+                                <a href="mailto:example@email.com" class="my-2 d-block">null</a>
+                                <a href="mailto:example@email.com">null</a>
                             </div>
                         </div>
                         <div class="contact-w3 my-4">
@@ -859,7 +866,7 @@
     <!-- popup-->
     <div id="gal1" class="pop-overlay animate" onselectstart="return false" oncopy="return false">
         <div class="popup">
-            <img src="./index/images/g1.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="./index/images/g1.jpg" alt="Popup Image" class="img-fluid lsbig" />
             <span class="mt-4" style="display:block;text-align: center">
                 <span style="font-weight: 800;font-size: 40px">S<span style="color: red;">iyuan</span></span>
                 <h4>~~啊！人需要壮丁~~</h4><br>
@@ -874,11 +881,11 @@
     <!-- popup-->
     <div id="gal2" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g2.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">
-                <h5 class="cont-form">LJL</h5>
-                <h4 style="text-align: center">该人物尚未评价</h4>
-            </p>
+            <img src="./index/images/g2.jpg" alt="Popup Image" class="img-fluid lsbig" />
+            <span class="mt-4">
+                <h5 class="cont-form">Sandwich</h5>
+                <span>XJ妹子千千万，MZ哥哥占一半~~<br><br>...缺友链</span>
+            </span>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
     </div>
@@ -886,8 +893,11 @@
     <!-- popup-->
     <div id="gal3" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g3.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">No text.Why not upload one?</p>
+            <img src="./index/images/g3.jpg" alt="Popup Image" class="img-fluid lsbig" />
+            <p class="mt-4">
+                <h5 class="cont-form">LJL</h5>
+                <h4 style="text-align: center">该人物尚无评价</h4>
+            </p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
     </div>
@@ -895,7 +905,7 @@
     <!-- popup-->
     <div id="gal4" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g4.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="./index/images/g4.jpg" alt="Popup Image" class="img-fluid lsbig" />
             <p class="mt-4">No text.Why not upload one?</p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
@@ -904,7 +914,7 @@
     <!-- popup-->
     <div id="gal5" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g5.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="./index/images/g5.jpg" alt="Popup Image" class="img-fluid lsbig" />
             <p class="mt-4">No text.Why not upload one?</p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
@@ -913,7 +923,7 @@
     <!-- popup-->
     <div id="gal6" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g6.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="./index/images/g6.jpg" alt="Popup Image" class="img-fluid lsbig" />
             <p class="mt-4">No text.Why not upload one?</p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
@@ -922,7 +932,7 @@
     <!-- popup-->
     <div id="gal7" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g7.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="./index/images/g7.jpg" alt="Popup Image" class="img-fluid lsbig" />
             <p class="mt-4">No text.Why not upload one?</p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
@@ -931,7 +941,7 @@
     <!-- popup-->
     <div id="gal8" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g8.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="./index/images/g8.jpg" alt="Popup Image" class="img-fluid lsbig" />
             <p class="mt-4">No text.Why not upload one?</p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
@@ -940,19 +950,25 @@
     <!-- popup-->
     <div id="gal9" class="pop-overlay animate">
         <div class="popup">
-            <img src="./index/images/g9.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="./index/images/g9.jpg" alt="Popup Image" class="img-fluid lsbig" />
             <p class="mt-4">No text.Why not upload one?</p>
             <a class="close" href="#portfolio_wthree">&times;</a>
         </div>
     </div>
     <!-- //popup -->
     <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
+        // $(document).ready(function () {
+        //     $(window).scroll(function () {
+        //         $("#top").addClass("scrollNav");
+        //     });
+        // });
+        $(window).resize(function() {
+            if ($(window).width() < 800) {
+                $("#top").removeClass("scrollNav");
+            } else {
                 $("#top").addClass("scrollNav");
-            });
+            }
         });
-        </script>
+    </script>
 </body>
-<script type="text/javascript" src="protect.js"></script>
 </html>
