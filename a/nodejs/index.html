@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>XJ Drivers</title>
+    <style>
+        a{
+            transition: all 0.3s;
+            text-decoration-line:none;
+        }
+        a:link{
+            color: rgb(7, 164, 255);
+        }
+        a:visited{
+            color: rgba(231, 131, 218, 0.89);
+        }
+        a:hover{
+            color: rgb(206, 255, 28);
+        }
+        a:active{
+            color: rgb(255, 30, 86);
+        }
+        body{
+            background-color: rgb(253, 246, 242);
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-left:10%;margin-right:10%;margin-top:30px;">
+        <h1><a href="https://download.xjdrivers.cf">Nodejs</a> 服务器</h1>
+        <div>
+            <h3>检查安装</h3>
+            <pre><code>node -v<br>npm -v</code></pre>
+            <h3>npm 使用</h3>
+            <pre><code>npm list -g #查看所有全局安装的模块<br>npm (search/install/uninstall/update)</code></pre>
+            <h3>直接使用.js</h3>
+            <pre><code>node [name].js</code></pre>
+            <h2>Anywhere(静态)</h2>
+            <h3>安装 anywhere</h3>
+            <pre><code>npm install anywhere --save -g<br>#全局安装</code></pre>
+            <h3>使用 anywhere</h3>
+            <pre><code>cmd> anywhere</code></pre>
+            <h2>Express</h2>(部分转自<a href="https://www.cnblogs.com/wgl0126/p/9290157.html">https://www.cnblogs.com/wgl0126/p/9290157.html</a>)
+            <p>Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用和丰富的 HTTP 工具。使用 Express 可以快速地搭建一个完整功能的网站。</p>
+            <h3>安装 express</h3>
+            <pre><code>npm install express --save -g<br>npm install express-generator --save -g<br>#全局安装</code></pre>
+            <h3>创建 express 项目</h3>
+            <pre><code>express [name]</code></pre>
+            <h3>安装依赖</h3>
+            <pre><code>cd [dir]<br>npm install<br>#生成node_modules文件<br>#app.js为主文件</code></pre>
+            <h3>启动项目</h3>
+            <pre><code>npm start</code></pre>
+            <span>若报错,则根据提示安装依赖<br>
+                否则,安装在<a href="http://localhost:3000/"> http://localhost:3000/</a>
+            </span>
+            <h3>文件说明</h3>
+            <div style="margin-left:20px;">
+                <li>package.json</li>
+
+            </div>
+            <h3>JavaScript</h3>
+            <span>var libHttp = require('http'); //请求HTTP协议模块<br>
+                    常用系统模块：<br>
+                    <div style="margin-left:20px;">
+                        http：封装http协议的服务器和客户端实现；<br>
+                        url：封装对url的解析和处理；<br>
+                        fs：封装对文件系统操作的功能；<br>
+                        path:封装对路径的解析功能。
+                    </div>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
