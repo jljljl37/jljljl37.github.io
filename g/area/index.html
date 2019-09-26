@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Area</title>
+        <link rel="stylesheet" href="./area.css">
+    </head>
+    <body>
+        <div class="whole">
+            <div class="area-note1">
+                <h1>Area——Welcome!</h1>
+            </div>
+            <div class="area-grid">
+                <div id="board"></div>
+                <div class="area-config">
+                    <table>
+                        <tbody id="qaq">
+                        </tbody>
+                    </table>
+                    <div class="area-button">
+                        <div><button class="button" id="qwq" style="display: inline-block;">确定</button></div>
+                        <div><button class="button" id="pause-button" style="display: none;">暂停</button></div>
+                        <div><button class="button" id="restart-button" style="display: none;">重开</button></div>
+                        <div><button class="button" id="dieeft" onclick="changedieft();" style="transition:all 0.3s;background-color:#41ff07">死亡特效</button></div>
+                    </div>
+                </div>
+                <div class="area-button">
+                    <div><p>-------------------------</p></div>
+                    <div id="note1" class="area-note1"></div>
+                    <div id="note3" class="area-note1"></div>
+                    <div id="note2" class="area-note2"></div>
+                    <div><p>-------------------------</p></div>
+                </div>
+            </div>
+        </div>
+        <script src="./game.js"></script>
+        <script type="text/javascript" color="0,0,255" pointcolor="0,0,0" opacity="0.7" zIndex="-1" count="120" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js"></script>
+    </body>
+</html>
