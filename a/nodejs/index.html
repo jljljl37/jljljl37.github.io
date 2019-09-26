@@ -48,9 +48,13 @@
             <pre><code>cd [dir]<br>npm install<br>#生成node_modules文件<br>#app.js为主文件</code></pre>
             <h3>启动项目</h3>
             <pre><code>npm start</code></pre>
-            <span>若报错,则根据提示安装依赖<br>
-                否则,安装在<a href="http://localhost:3000/"> http://localhost:3000/</a>
+            <span>注意：jade已经转为pug:<br>
+                修改app.js: app.set('view engine', 'pug');<br>
+                在./views下创建文件：error.pug;<br>
             </span>
+            <p>若报错,则根据提示安装依赖<br>
+                否则,安装在 <a href="http://localhost:3000/"> http://localhost:3000/</a>
+            </p>
             <h3>文件说明</h3>
             <div style="margin-left:20px;">
                 <li>package.json</li>
